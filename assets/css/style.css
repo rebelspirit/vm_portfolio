@@ -508,7 +508,7 @@ hr {
 }
 .jquery-logo {
     max-width: 87px;
-    height: 87px;
+    height: 85px;
     background-image: url(../images/jquery.png);
 }
 .git-logo {
@@ -944,7 +944,6 @@ hr {
 }
 
 .grid figure figcaption {
-    /*padding: 2em;*/
     color: #fff;
     text-transform: uppercase;
     font-size: 1.25em;
@@ -1009,7 +1008,8 @@ figure.effect-bubba img {
     transition: opacity 0.35s;
 }
 
-figure.effect-bubba:hover img {
+figure.effect-bubba:hover img,
+figure.effect-bubba:active img{
     opacity: 0.4;
 }
 
@@ -1059,14 +1059,18 @@ figure.effect-bubba p {
 }
 
 figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
+figure.effect-bubba:hover figcaption::after,
+figure.effect-bubba:active figcaption::before,
+figure.effect-bubba:active figcaption::after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
 }
 
 figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
+figure.effect-bubba:hover p,
+figure.effect-bubba:active h2,
+figure.effect-bubba:active p{
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
