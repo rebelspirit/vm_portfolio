@@ -926,7 +926,7 @@ hr {
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 10px 1%;
+    margin: 10px 0;
     min-width: 100%;
     max-width: 100%;
     height: auto;
@@ -1009,7 +1009,8 @@ figure.effect-bubba img {
 }
 
 figure.effect-bubba:hover img,
-figure.effect-bubba:active img{
+figure.effect-bubba:active img,
+figure.effect-bubba:focus img, {
     opacity: 0.4;
 }
 
@@ -1061,7 +1062,9 @@ figure.effect-bubba p {
 figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after,
 figure.effect-bubba:active figcaption::before,
-figure.effect-bubba:active figcaption::after {
+figure.effect-bubba:active figcaption::after,
+figure.effect-bubba:focus figcaption::before,
+figure.effect-bubba:focus figcaption::after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1070,7 +1073,9 @@ figure.effect-bubba:active figcaption::after {
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p,
 figure.effect-bubba:active h2,
-figure.effect-bubba:active p{
+figure.effect-bubba:active p,
+figure.effect-bubba:focus h2,
+figure.effect-bubba:focus p {
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
