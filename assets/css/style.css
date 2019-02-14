@@ -22,8 +22,7 @@ body {
     background-color: #081625;
     overflow-x: hidden;
 }
-/* Preloader
-************************** */
+/* Preloader */
 .spinner-wrapper {
     position: fixed;
     top: 0;
@@ -89,32 +88,14 @@ body {
            -webkit-transform: scaleY(1.0);
        }
 }
-/* Remover
-************************** */
+/* Preloader */
+/* Remover Preloader */
 .none {
-    transition: all 1.7s ease;
+    transition: all .5s ease;
     opacity: 0;
+    z-index: -100;
 }
-/*#preloader {*/
-    /*background: #FFF;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*position: fixed;*/
-    /*right: 0;*/
-    /*top: 0;*/
-    /*z-index: 9999;*/
-/*}*/
-/*#status {*/
-    /*background-image: url(../images/item-1.jpg);*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*height: 200px;*/
-    /*left: 50%;*/
-    /*margin: -100px 0 0 -100px;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*width: 200px;*/
-/*}*/
+/* Remover Preloader */
 .container {
     width: 100%;
     max-width: 1920px;

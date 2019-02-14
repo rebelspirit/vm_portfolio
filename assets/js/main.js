@@ -4,13 +4,9 @@
      * Preloader
     /* ---------------------------------------------- */
 
-    // $(window).load(function() {
-    //     $('#status').fadeOut();
-    //     $('#preloader').delay(300).fadeOut('slow');
-    // });
     setTimeout(function(){
         document.getElementById("loading").classList.add("none");
-    }, 1500);
+    }, 800);
 
     $(document).ready(function() {
         /* ---------------------------------------------- /*
