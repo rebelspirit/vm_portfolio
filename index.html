@@ -12,15 +12,15 @@
     <img class="parallax-slider" src="assets/images/preview-bg.png" alt="parallax-img">
 </div>
     <header class="container" id="home">
-        <nav>
+        <nav id="nav" class="wow">
             <ul class="navigation wow slideInDown">
-                <li><a href="#home" class="current page-scroll">Home</a></li>
-                <li><a href="#about" class="page-scroll">About</a></li>
-                <li><a href="#skills" class="page-scroll">Skills</a></li>
-                <li><a href="#experience" class="page-scroll">Experience</a></li>
-                <li><a href="#softskills" class="page-scroll">Speaking skills</a></li>
-                <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-                <li><a href="#contact" class="page-scroll">Contact</a></li>
+                <li><a href="#home" class="current page-scroll link">Home</a></li>
+                <li><a href="#about" class="page-scroll link">About</a></li>
+                <li><a href="#skills" class="page-scroll link">Skills</a></li>
+                <li><a href="#experience" class="page-scroll link">Experience</a></li>
+                <li><a href="#softskills" class="page-scroll link">Speaking skills</a></li>
+                <li><a href="#portfolio" class="page-scroll link">Portfolio</a></li>
+                <li><a href="#contact" class="page-scroll link">Contact</a></li>
             </ul>
             <a href="#" class="burger wow animated infinite pulse"><i class="fa fa-bars fa-2x"></i></a>
         </nav>
@@ -366,20 +366,21 @@
                     <p>+380 93 3070488</p>
                 </div>
             </div>
-            <div class="feedback-form">
+            <form class="feedback-form" id="contact-form">
                 <div class="form-name">
-                    <input type="email" id="name" name="email" class="input" placeholder="Name">
+                    <input type="name" id="c_name" name="name" class="input" placeholder="Name">
                 </div>
                 <div class="form-email">
-                    <input type="email" id="email" name="email" class="input" placeholder="E-mail">
+                    <input type="email" id="c_email" name="c_email" class="input" placeholder="E-mail">
                 </div>
                 <div class="form-text">
-                    <textarea class="textarea" id="message" name="message" rows="7" placeholder="Message"></textarea>
+                    <textarea class="textarea" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
                 </div>
-            </div>
-            <div class="feedback-button">
-                <input type="submit" class="form-button" value="Send message">
-            </div>
+                <div class="feedback-button">
+                    <input type="submit" class="form-button" value="Send message">
+                </div>
+            </form>
+            <div class="ajax-response"></div>
         </section>
         <section class="copyright">
             <div class="social-icons wow zoomIn">
@@ -398,9 +399,9 @@
             </h6>
         </section>
     </footer>
-    <!--<div class="scroll-up">-->
-        <!--<a href="#home" class="page-scroll"><i class="fa fa-angle-up"></i></a>-->
-    <!--</div>-->
+    <div class="scroll-up">
+        <a href="#home" class="page-scroll"><i class="fa fa-angle-up"></i></a>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/parallax.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
