@@ -178,6 +178,35 @@ nav {
     font-family: "AvenirNextCyr-Demi", sans-serif;
     margin: 0 auto;
 }
+.translate-container {
+    position: absolute;
+    left: 1%;
+    top: 7px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 125px;
+}
+.translate {
+    width: 32px;
+    height: 22px;
+    padding: 3px;
+    margin: 5px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(0.75);
+    cursor: pointer;
+}
+.en-lang {
+    background-image: url(../images/en-lang.png);
+}
+.ru-lang {
+    background-image: url(../images/ru-lang.png);
+}
+.ua-lang {
+    background-image: url(../images/ua-lang.png);
+}
 ul > li {
     list-style-type: none;
     padding: 15px;

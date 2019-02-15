@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="./assets/css/animate.css">
 </head>
 <body>
-<!--<div id="preloader" style="/* display: none; */">-->
-    <!--<div id="status" style="/* display: none; */"></div>-->
-<!--</div>-->
 <div class="spinner-wrapper" id="loading">
     <div class="spinner"></div>
     <div class="spinner">
@@ -27,19 +24,24 @@
     <header class="container" id="home">
         <nav id="nav" class="wow">
             <ul class="navigation wow slideInDown">
-                <li><a href="#home" class="current page-scroll link">Home</a></li>
-                <li><a href="#about" class="page-scroll link">About</a></li>
-                <li><a href="#skills" class="page-scroll link">Skills</a></li>
-                <li><a href="#experience" class="page-scroll link">Experience</a></li>
-                <li><a href="#softskills" class="page-scroll link">Speaking skills</a></li>
-                <li><a href="#portfolio" class="page-scroll link">Portfolio</a></li>
-                <li><a href="#contact" class="page-scroll link">Contact</a></li>
+                <li><a href="#home" class="current page-scroll link lang"    key="Home">Home</a></li>
+                <li><a href="#about" class="page-scroll link lang"   key="About">About</a></li>
+                <li><a href="#skills" class="page-scroll link lang" key="Skills">Skills</a></li>
+                <li><a href="#experience" class="page-scroll link lang"  key="Experience">Experience</a></li>
+                <li><a href="#softskills" class="page-scroll link lang"  key="Speaking-skills">Speaking skills</a></li>
+                <li><a href="#portfolio" class="page-scroll link lang"   key="Portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="page-scroll link lang" key="Contact">Contact</a></li>
             </ul>
             <a href="#" class="burger wow animated infinite pulse"><i class="fa fa-bars fa-2x"></i></a>
+            <div class="translate-container">
+                <div class="link translate en-lang" id="en"></div>
+                <div class="link translate ru-lang" id="ru"></div>
+                <div class="link translate ua-lang" id="ua"></div>
+            </div>
         </nav>
         <div class="header-description">
-            <h1 class="wow zoomIn animated">Hello, I'm <span>VITALIY MALINOVSKYI</span></h1>
-            <h3 class="wow zoomIn animated">I'm the <span>Kyiv, Ukraine</span> based <span>Front-end Developer</span>, creating awesome and effective web sites for companies and people  around the globe. Let's <a class="page-scroll" href="#about"> start scrolling</a> and learn more <a class="page-scroll" href="#about">about me</a>.</h3>
+            <h1 class="wow zoomIn animated lang" key="Hello">Hello, I'm <span>VITALIY MALINOVSKYI</span></h1>
+            <h3 class="wow zoomIn animated lang" key="Hello-description">I'm the <span>Kyiv, Ukraine</span> based <span>Front-end Developer</span>, creating awesome and effective web sites for companies and people  around the globe. Let's <a class="page-scroll" href="#about"> start scrolling</a> and learn more <a class="page-scroll" href="#about">about me</a>.</h3>
             <hr class="wow zoomIn">
             <div class="social-icons wow zoomIn animated">
                 <a class="github" target="_blank" href="#"></a>
@@ -64,30 +66,30 @@
                 <div class="photo"></div>
             </div>
             <div class="about-me-container">
-                <h2>About Me</h2>
-                <p>I have been engaged in web-development for more than 5 years. During this time I have created several projects for non-commercial use. In particular: I have built a website for watching movies and TV-shows and a news site on the basis of CMS WordPress.
+                <h2 class="lang" key="About-me">About Me</h2>
+                <p class="lang" key="About-me-description">I have been engaged in web-development for more than 5 years. During this time I have created several projects for non-commercial use. In particular: I have built a website for watching movies and TV-shows and a news site on the basis of CMS WordPress.
                     Apart from that, I have developed an online radio station using CMS DataLife Engine, an analytical site dedicated to new projects of the popular MMORPG game Lineage 2 using HTML / CSS / Php, several sites for the servers of the game Lineage 2 using HTML / CSS / Php / MySQL, and the database of the game Lineage 2 using CMS MediaWiki.
                     <br>
                     <br>
                     Moreover, I have worked out my own game project Lineage 2. At the moment I am fond of modern Blockchain technologies, particularly crypto-currencies and crypto-currency "mining".</p>
                 <div class="contact-details-container">
                     <div class="contact-details">
-                        <h2>Contact Details</h2>
-                        <p>MALINOVSKYI VITALIY</p>
-                        <p>Kyiv, Ukraine</p>
+                        <h2 class="lang" key="Contact-details">Contact Details</h2>
+                        <p class="lang" key="Name">MALINOVSKYI VITALIY</p>
+                        <p class="lang" key="Location">Kyiv, Ukraine</p>
                         <p>+380 93 3070488</p>
                         <p>vv.malinovskyi@gmail.com</p>
                     </div>
                     <div class="button-container">
-                        <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                        <a href="#" class="button lang" key="Download"><i class="fa fa-download"></i>Download Resume</a>
                     </div>
                 </div>
             </div>
             <div class="stars"></div>
         </section>
-        <h2 class="section-title" id="skills">What skills do I have?</h2>
+        <h2 class="section-title lang" id="skills" key="Skills-title">What skills do I have?</h2>
         <section class="my-skills">
-            <h3 class="languages-title">Programing Languages</h3>
+            <h3 class="languages-title lang" key="Programing-languages">Programing Languages</h3>
             <div class="languages-container">
                 <div class="html wow zoomIn">
                     <div class="logo html-logo"></div>
@@ -130,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <h3 class="frameworks-title">Frameworks</h3>
+            <h3 class="frameworks-title lang" key="Frameworks">Frameworks</h3>
             <div class="frameworks-container">
                 <div class="bootstrap wow zoomIn">
                     <div class="logo bootstrap-logo"></div>
@@ -173,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <h3 class="building-tools">Building tools & Libraries</h3>
+            <h3 class="building-tools lang" key="Building tools">Building tools & Libraries</h3>
             <div class="buildings-container">
 
                     <div class="gulp wow zoomIn">
@@ -222,7 +224,7 @@
 
             <div class="other-container">
                 <div class="vsc-container">
-                    <h3 class="vsc">Version system control</h3>
+                    <h3 class="vsc lang" key="Vsc">Version system control</h3>
                     <div class="git wow zoomIn">
                         <div class="logo git-logo"></div>
                         <div class="skills">
@@ -235,7 +237,7 @@
                     </div>
                 </div>
                 <div class="other-tools-container">
-                    <h3 class="other-tools">Other tools</h3>
+                    <h3 class="other-tools lang" key="Other-tools">Other tools</h3>
                     <div class="photoshop wow zoomIn">
                         <div class="logo photoshop-logo"></div>
                         <div class="skills">
@@ -248,7 +250,7 @@
                     </div>
                 </div>
                 <div class="database-container">
-                    <h3 class="database">Database</h3>
+                    <h3 class="database lang" key="Database">Database</h3>
                     <div class="mysql wow zoomIn">
                         <div class="logo mysql-logo"></div>
                         <div class="skills">
@@ -262,48 +264,48 @@
                 </div>
             </div>
         </section>
-        <h2 class="section-title" id="experience">What experience I have?</h2>
+        <h2 class="section-title lang" id="experience" key="Experience-title">What experience I have?</h2>
         <section class="my-experience">
             <div class="circle circle-left  wow slideInLeft">
-                <h6 class="date-start">SEP 2009</h6>
-                <h6 class="date-end">AUG 2014</h6>
-                <div class="exp-text left">
+                <h6 class="date-start lang" key="Sep-2009">SEP 2009</h6>
+                <h6 class="date-end lang" key="Aug-2014">AUG 2014</h6>
+                <div class="exp-text left lang" key="University">
                     <h5>Kiev National University of Technology and Design</h5>
                     <p>Faculty of Engineering and Economics</p>
                     <p>Marketing</p>
                 </div>
             </div>
             <div class="circle circle-middle  wow slideInUp">
-                <h6 class="date-start">AUG 2017</h6>
-                <h6 class="date-end">JUN 2018</h6>
-                <div class="exp-text middle">
+                <h6 class="date-start lang" key="Aug-2017">AUG 2017</h6>
+                <h6 class="date-end lang" key="Jun-2018">JUN 2018</h6>
+                <div class="exp-text middle lang" key="Courses">
                     <h5>IT School “GO IT”</h5>
                     <p>in a direction of Front-end Development</p>
                 </div>
             </div>
             <div class="circle circle-right wow slideInRight">
-                <h6 class="date-start">JUN  2018</h6>
+                <h6 class="date-start lang" key="Jun-2018">JUN  2018</h6>
                 <h6 class="date-end">...</h6>
-                <div class="exp-text right">
+                <div class="exp-text right lang" key="Freelance">
                     <h5>Freelance Front-end Developer</h5>
                     <p>Сreating awesome and effective web sites for companies and people  around the globe</p>
                 </div>
             </div>
         </section>
-        <h2 class="section-title" id="softskills">What speaking skills I have?</h2>
+        <h2 class="section-title lang" id="softskills" key="Speaking-skills-title">What speaking skills I have?</h2>
         <section class="my-soft-skills">
             <div class="flag uk  wow zoomIn"></div>
             <div class="flag ukr wow zoomIn"></div>
             <div class="flag rus wow zoomIn"></div>
         </section>
-        <h2 class="section-title" id="portfolio">What is my last projects?</h2>
+        <h2 class="section-title lang" id="portfolio" key="Projects-title">What is my last projects?</h2>
         <section class="my-portfolio">
             <a href="https://rebelspirit.github.io/dekro/" target="_blank" class="grid wow zoomIn">
                 <figure class="effect-bubba">
                     <img src="assets/images/dekroimg.png" alt="img01">
                     <figcaption>
                         <h2>Dekro <span>Company</span></h2>
-                        <p>online furniture manufacturing shop</p>
+                        <p class="lang" key="Dekro">online furniture manufacturing shop</p>
                     </figcaption>
                 </figure>
             </a>
@@ -312,7 +314,7 @@
                     <img src="assets/images/stylishimg.png" alt="img01">
                     <figcaption>
                         <h2>Personal <span>Stylist</span></h2>
-                        <p>individual stylist landing page</p>
+                        <p class="lang" key="Stylist">individual stylist landing page</p>
                     </figcaption>
                 </figure>
             </a>
@@ -321,7 +323,7 @@
                     <img src="assets/images/eth-bg-1.png" alt="img01">
                     <figcaption>
                         <h2>x2<span>invest</span></h2>
-                        <p>smart-contract investment portal based on ethereum blockchain</p>
+                        <p class="lang" key="Eth">smart-contract investment portal based on ethereum blockchain</p>
                     </figcaption>
                 </figure>
             </a>
@@ -329,8 +331,8 @@
                 <figure class="effect-bubba">
                     <img src="assets/images/whatchingfilm.png" alt="img01">
                     <figcaption>
-                        <h2>Whatching <span>Film</span></h2>
-                        <p>Movie Database portal</p>
+                        <h2>Watching <span>Film</span></h2>
+                        <p class="lang" key="Movie">Movie Database portal</p>
                     </figcaption>
                 </figure>
             </a>
@@ -355,20 +357,20 @@
         </section>
         <section class="hire-me">
             <div class="hire-me-container wow zoomIn">
-                <h2>ARE YOU READY TO START?</h2>
-                <p>I'm available for freelance projects.</p>
-                <a href="#contact" class="button page-scroll"><i class="fa fa-code"></i>Hire me</a>
+                <h2 class="lang" key="Hire-title">ARE YOU READY TO START?</h2>
+                <p class="lang" key="Hire-description">I'm available for freelance projects.</p>
+                <a href="#contact" class="button page-scroll lang" key="Hire-button"><i class="fa fa-code"></i>Hire me</a>
             </div>
         </section>
     </main>
     <footer class="container">
         <section class="feedback wow zoomIn">
-            <h2 class="section-title" id="contact">Drop me a line</h2>
-            <p>Describe in detail your project. Stick a few links, if on the Internet there is something similar.</p>
+            <h2 class="section-title lang" id="contact" key="Contact-title">Drop me a line</h2>
+            <p class="lang" key="Contact-description">Describe in detail your project. Stick a few links, if on the Internet there is something similar.</p>
             <div class="feedback-contacts">
                 <div class="fb-address">
                     <i class="fa fa-map-marker fa-2x"></i>
-                    <p>Kyiv, Ukraine</p>
+                    <p class="lang" key="Location">Kyiv, Ukraine</p>
                 </div>
                 <div class="fb-email">
                     <i class="fa fa-envelope-o fa-2x"></i>
@@ -380,16 +382,16 @@
                 </div>
             </div>
             <form class="feedback-form" id="contact-form">
-                <div class="form-name">
+                <div class="form-name lang" key="Feedback-name">
                     <input type="name" id="c_name" name="name" class="input" placeholder="Name">
                 </div>
                 <div class="form-email">
                     <input type="email" id="c_email" name="c_email" class="input" placeholder="E-mail">
                 </div>
-                <div class="form-text">
+                <div class="form-text lang" key="Feedback-message">
                     <textarea class="textarea" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
                 </div>
-                <div class="feedback-button">
+                <div class="feedback-button lang" key="Send-message">
                     <input type="submit" class="form-button" value="Send message">
                 </div>
             </form>
