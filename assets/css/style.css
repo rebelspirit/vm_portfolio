@@ -179,33 +179,33 @@ nav {
     margin: 0 auto;
 }
 .translate-container {
-    position: absolute;
-    left: 1%;
-    top: 7px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 125px;
-}
+     position: absolute;
+     left: 1%;
+     top: 2px;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     max-width: 125px;
+ }
 .translate {
-    width: 32px;
-    height: 22px;
+    width: 45px;
+    height: 32px;
     padding: 3px;
     margin: 5px;
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
-    filter: brightness(0.75);
+    filter: brightness(0.8);
     cursor: pointer;
 }
 .en-lang {
-    background-image: url(../images/en-lang.png);
+    background-image: url(../images/United-Kingdom.png);
 }
 .ru-lang {
-    background-image: url(../images/ru-lang.png);
+    background-image: url(../images/Russia.png);
 }
 .ua-lang {
-    background-image: url(../images/ua-lang.png);
+    background-image: url(../images/Ukraine.png);
 }
 ul > li {
     list-style-type: none;
@@ -1378,6 +1378,10 @@ textarea::-moz-placeholder {
     .burger {
         display: inline-block;
     }
+    .translate-container {
+        left: 3%;
+        top: 12px;
+    }
     ul > li {
         margin-left: 15px;
     }
@@ -1550,6 +1554,10 @@ textarea::-moz-placeholder {
     .burger {
         display: inline-block;
     }
+    .translate-container {
+        left: 3%;
+        top: 12px;
+    }
     ul > li {
         margin-left: 15px;
     }
@@ -1720,6 +1728,10 @@ textarea::-moz-placeholder {
     }
     .burger {
         display: inline-block;
+    }
+    .translate-container {
+        left: 3%;
+        top: 12px;
     }
     ul > li {
         margin-left: 15px;
