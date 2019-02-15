@@ -186,6 +186,7 @@ nav {
      justify-content: space-between;
      width: 100%;
      max-width: 125px;
+     z-index: 9;
  }
 .translate {
     width: 45px;
